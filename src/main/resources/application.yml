@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: iPOS
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/udpassignment?serverTimezone=UTC
+    username: root
+    password:
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  messages:
+    basename: i18n/messages
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
