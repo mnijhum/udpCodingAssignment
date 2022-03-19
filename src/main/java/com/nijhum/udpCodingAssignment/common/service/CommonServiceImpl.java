@@ -17,7 +17,7 @@ public abstract class CommonServiceImpl<T> implements CommonService<T> {
 
     }
     public T get(Long id){
-        return repository.getById(id);
+        return repository.findById(id).get();
     }
     public T save(T entity){
         return  repository.save(entity);
