@@ -1,11 +1,15 @@
 # udpCodingAssignment
-##How to run the project
-###Technology used:
+
+## How to run the project
+
+### Technology used:
 I have used Java 17 and intellij idea for this project. So please download and install java 17 and intellij idea first.
+
 ### Database Configuration:
 1. Connect to any MySQL server using xampp or wampp and remeber the port number
 2. Create a database named "udpassignment" in your localhost and leave as it is.
-###Starting the server
+
+### Starting the server
 1. Clone this repository in your local machine.
 2. If you downloaded the zip file, unzip it and right click on udpCodingAssignment folder and open as a project via intellij Idea.
 3. Go to ```src/main/resources``` and open ```application.yml``` 
